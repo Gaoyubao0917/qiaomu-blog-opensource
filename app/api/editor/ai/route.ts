@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from 'next/server'
+﻿import { NextRequest, NextResponse } from 'next/server'
 import { authenticateRequest } from '@/lib/admin-auth'
 import { getAppCloudflareEnv } from '@/lib/cloudflare'
 import { transformEditorSelectionStream, getAiRuntimeEnv } from '@/lib/ai'
@@ -14,7 +14,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'DB unavailable' }, { status: 500 })
   }
 
-  const secret = resolveAiConfigSecret(env as Record<string, unknown>)
+  const secret = resolveAiConfigSecret(env as unknown as Record<string, unknown>)
   await ensureAiConfigInfrastructure(db, secret)
 
   let body: { action?: string; text?: string; customPrompt?: string }

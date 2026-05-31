@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from 'next/server'
+﻿import { NextRequest, NextResponse } from 'next/server'
 import { authenticateRequest } from '@/lib/admin-auth'
 import { getAppCloudflareEnv } from '@/lib/cloudflare'
 import {
@@ -17,7 +17,7 @@ export async function PUT(
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
   }
   if (!db) return NextResponse.json({ error: 'DB unavailable' }, { status: 500 })
-  const secret = resolveAiConfigSecret(env as Record<string, unknown>)
+  const secret = resolveAiConfigSecret(env as unknown as Record<string, unknown>)
   await ensureAiConfigInfrastructure(db, secret)
 
   const { id } = await params
@@ -83,7 +83,7 @@ export async function DELETE(
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
   }
   if (!db) return NextResponse.json({ error: 'DB unavailable' }, { status: 500 })
-  const secret = resolveAiConfigSecret(env as Record<string, unknown>)
+  const secret = resolveAiConfigSecret(env as unknown as Record<string, unknown>)
   await ensureAiConfigInfrastructure(db, secret)
 
   const { id } = await params

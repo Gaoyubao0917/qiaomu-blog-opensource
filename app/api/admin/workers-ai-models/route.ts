@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from 'next/server'
+﻿import { NextRequest, NextResponse } from 'next/server'
 import { authenticateRequest } from '@/lib/admin-auth'
 import { getAppCloudflareEnv } from '@/lib/cloudflare'
 import {
@@ -40,7 +40,7 @@ export async function GET(req: NextRequest) {
   const requestedProfileId = Number(url.searchParams.get('profile_id') || '')
   const fallbackModels = kind === 'image' ? WORKERS_AI_IMAGE_MODEL_SUGGESTIONS : WORKERS_AI_TEXT_MODEL_SUGGESTIONS
 
-  const secret = resolveAiConfigSecret(env as Record<string, unknown>)
+  const secret = resolveAiConfigSecret(env as unknown as Record<string, unknown>)
   await ensureAiConfigInfrastructure(db, secret)
 
   let selectedProfile: WorkersAiProfileRow | null = null

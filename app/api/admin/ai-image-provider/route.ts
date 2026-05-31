@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from 'next/server'
+﻿import { NextRequest, NextResponse } from 'next/server'
 import { authenticateRequest } from '@/lib/admin-auth'
 import { getAppCloudflareEnv } from '@/lib/cloudflare'
 import {
@@ -86,7 +86,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: payload.error }, { status: 400 })
   }
 
-  const secret = resolveAiConfigSecret(env as Record<string, unknown>)
+  const secret = resolveAiConfigSecret(env as unknown as Record<string, unknown>)
   const rawApiKey = (body.api_key || '').trim()
   const { encrypted, masked } = await saveEncryptedAiImageApiKey(rawApiKey, secret)
 
@@ -160,7 +160,7 @@ export async function PUT(req: NextRequest) {
     return NextResponse.json({ error: payload.error }, { status: 400 })
   }
 
-  const secret = resolveAiConfigSecret(env as Record<string, unknown>)
+  const secret = resolveAiConfigSecret(env as unknown as Record<string, unknown>)
   const rawApiKey = (body.api_key || '').trim()
   const encryptedPayload = rawApiKey
     ? await saveEncryptedAiImageApiKey(rawApiKey, secret)

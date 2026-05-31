@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from 'next/server'
+﻿import { NextRequest, NextResponse } from 'next/server'
 import { authenticateRequest } from '@/lib/admin-auth'
 import { getAppCloudflareEnv } from '@/lib/cloudflare'
 import {
@@ -105,7 +105,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'DB unavailable' }, { status: 500 })
   }
 
-  const secret = resolveAiConfigSecret(env as Record<string, unknown>)
+  const secret = resolveAiConfigSecret(env as unknown as Record<string, unknown>)
   await ensureAiConfigInfrastructure(db, secret)
 
   const body = (await req.json()) as {

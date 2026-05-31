@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from 'next/server'
+﻿import { NextRequest, NextResponse } from 'next/server'
 import { authenticateRequest } from '@/lib/admin-auth'
 import { getAppCloudflareEnv } from '@/lib/cloudflare'
 import { generateEditorImage } from '@/lib/ai-image'
@@ -73,7 +73,7 @@ export async function POST(req: NextRequest) {
       resolution: body.resolution,
       profileId: body.profileId,
       db,
-      env: env as Record<string, string | undefined>,
+      env: env as unknown as Record<string, string | undefined>,
       images,
     })
 

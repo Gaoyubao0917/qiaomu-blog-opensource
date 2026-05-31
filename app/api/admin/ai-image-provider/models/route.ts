@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from 'next/server'
+﻿import { NextRequest, NextResponse } from 'next/server'
 import { authenticateRequest } from '@/lib/admin-auth'
 import { getAppCloudflareEnv } from '@/lib/cloudflare'
 import {
@@ -93,7 +93,7 @@ export async function GET(req: NextRequest) {
   const queryApiKey = requestUrl.searchParams.get('api_key')?.trim() || ''
   const queryProfileId = Number(requestUrl.searchParams.get('profile_id') || '')
 
-  const secret = resolveAiConfigSecret(env as Record<string, unknown>)
+  const secret = resolveAiConfigSecret(env as unknown as Record<string, unknown>)
   const rawSelectedProfile = Number.isFinite(queryProfileId) && queryProfileId > 0
     ? await db.prepare(`
       SELECT id, provider, base_url, api_key_encrypted

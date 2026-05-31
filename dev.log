@@ -1,0 +1,284 @@
+
+> blog@0.1.0 dev
+> next dev --webpack
+
+▲ Next.js 16.2.6 (webpack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.24:3000
+✓ Ready in 341ms
+⚠ Attempted to load @next/swc-win32-x64-msvc, but an error occurred: \\?\C:\Users\Gaoyubao\Desktop\blog\node_modules\@next\swc-win32-x64-msvc\next-swc.win32-x64-msvc.node is not a valid Win32 application.
+\\?\C:\Users\Gaoyubao\Desktop\blog\node_modules\@next\swc-win32-x64-msvc\next-swc.win32-x64-msvc.node
+  Skipping creating a lockfile at C:\Users\Gaoyubao\Desktop\blog\.next\dev\lock because we're using WASM bindings
+
+○ Compiling / ...
+ GET / 200 in 4.3s (next.js: 4.1s, application-code: 175ms)
+ GET / 200 in 37ms (next.js: 4ms, application-code: 33ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <RootLayout>
+                        <html
+                          lang="zh-CN"
+                          className="__variable_246ccd __variable_4c40f6 h-full antialiased"
+-                         data-darkreader-proxy-injected="true"
+                        >
+                  ...
+ 
+ GET /blog/ 200 in 505ms (next.js: 436ms, application-code: 69ms)
+ GET /blog/ 200 in 25ms (next.js: 3ms, application-code: 23ms)
+ GET /blog/modern-css/ 200 in 2.5s (next.js: 2.3s, generate-params: 831ms, application-code: 146ms)
+ GET /blog/hello-world/ 200 in 118ms (next.js: 9ms, generate-params: 3ms, application-code: 109ms)
+ GET /blog/ 200 in 19ms (next.js: 2ms, application-code: 17ms)
+ GET /about/ 200 in 342ms (next.js: 313ms, application-code: 29ms)
+ GET / 200 in 34ms (next.js: 7ms, application-code: 27ms)
+ GET /blog/ 200 in 21ms (next.js: 7ms, application-code: 15ms)
+ GET / 200 in 15ms (next.js: 1430µs, application-code: 14ms)
+ GET / 200 in 84ms (next.js: 2ms, application-code: 82ms)
+ GET / 200 in 51ms (next.js: 3ms, application-code: 49ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <RootLayout>
+                        <html
+                          lang="zh-CN"
+                          className="__variable_246ccd __variable_4c40f6 h-full antialiased"
+-                         data-darkreader-proxy-injected="true"
+                        >
+                  ...
+ 
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <RootLayout>
+                        <html
+                          lang="zh-CN"
+                          className="__variable_246ccd __variable_4c40f6 h-full antialiased"
+-                         data-darkreader-proxy-injected="true"
+                        >
+                  ...
+ 
+ GET / 200 in 107ms (next.js: 37ms, application-code: 70ms)
+ GET / 200 in 22ms (next.js: 1127µs, application-code: 21ms)
+ GET / 200 in 176ms (next.js: 4ms, application-code: 173ms)
+ GET / 200 in 67ms (next.js: 5ms, application-code: 62ms)
+ GET / 200 in 48ms (next.js: 4ms, application-code: 43ms)
+ GET / 200 in 33ms (next.js: 2ms, application-code: 31ms)
+ GET / 200 in 39ms (next.js: 2ms, application-code: 37ms)
+Error: ENOENT: no such file or directory, scandir 'C:\Users\Gaoyubao\Desktop\blog\app'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: 'C:\\Users\\Gaoyubao\\Desktop\\blog\\app'
+}
+⨯ unhandledRejection: Error: ENOENT: no such file or directory, scandir 'C:\Users\Gaoyubao\Desktop\blog\app'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: 'C:\\Users\\Gaoyubao\\Desktop\\blog\\app'
+}
+⨯ unhandledRejection:  Error: ENOENT: no such file or directory, scandir 'C:\Users\Gaoyubao\Desktop\blog\app'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: 'C:\\Users\\Gaoyubao\\Desktop\\blog\\app'
+}
+Error: ENOENT: no such file or directory, scandir 'C:\Users\Gaoyubao\Desktop\blog\app'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: 'C:\\Users\\Gaoyubao\\Desktop\\blog\\app'
+}
+⨯ unhandledRejection: Error: ENOENT: no such file or directory, scandir 'C:\Users\Gaoyubao\Desktop\blog\app'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: 'C:\\Users\\Gaoyubao\\Desktop\\blog\\app'
+}
+⨯ unhandledRejection:  Error: ENOENT: no such file or directory, scandir 'C:\Users\Gaoyubao\Desktop\blog\app'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: 'C:\\Users\\Gaoyubao\\Desktop\\blog\\app'
+}
+Error: ENOENT: no such file or directory, scandir 'C:\Users\Gaoyubao\Desktop\blog\app'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: 'C:\\Users\\Gaoyubao\\Desktop\\blog\\app'
+}
+⨯ unhandledRejection: Error: ENOENT: no such file or directory, scandir 'C:\Users\Gaoyubao\Desktop\blog\app'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: 'C:\\Users\\Gaoyubao\\Desktop\\blog\\app'
+}
+⨯ unhandledRejection:  Error: ENOENT: no such file or directory, scandir 'C:\Users\Gaoyubao\Desktop\blog\app'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: 'C:\\Users\\Gaoyubao\\Desktop\\blog\\app'
+}
+Error: ENOENT: no such file or directory, scandir 'C:\Users\Gaoyubao\Desktop\blog\app'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: 'C:\\Users\\Gaoyubao\\Desktop\\blog\\app'
+}
+Error: ENOENT: no such file or directory, scandir 'C:\Users\Gaoyubao\Desktop\blog\app'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: 'C:\\Users\\Gaoyubao\\Desktop\\blog\\app'
+}
+Error: ENOENT: no such file or directory, scandir 'C:\Users\Gaoyubao\Desktop\blog\app'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: 'C:\\Users\\Gaoyubao\\Desktop\\blog\\app'
+}
+Error: ENOENT: no such file or directory, scandir 'C:\Users\Gaoyubao\Desktop\blog\app'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: 'C:\\Users\\Gaoyubao\\Desktop\\blog\\app'
+}
+Error: ENOENT: no such file or directory, scandir 'C:\Users\Gaoyubao\Desktop\blog\app'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: 'C:\\Users\\Gaoyubao\\Desktop\\blog\\app'
+}
+Error: ENOENT: no such file or directory, scandir 'C:\Users\Gaoyubao\Desktop\blog\app'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: 'C:\\Users\\Gaoyubao\\Desktop\\blog\\app'
+}
+Error: ENOENT: no such file or directory, scandir 'C:\Users\Gaoyubao\Desktop\blog\app'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: 'C:\\Users\\Gaoyubao\\Desktop\\blog\\app'
+}
+⨯ unhandledRejection: Error: ENOENT: no such file or directory, scandir 'C:\Users\Gaoyubao\Desktop\blog\app'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: 'C:\\Users\\Gaoyubao\\Desktop\\blog\\app'
+}
+⨯ unhandledRejection:  Error: ENOENT: no such file or directory, scandir 'C:\Users\Gaoyubao\Desktop\blog\app'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: 'C:\\Users\\Gaoyubao\\Desktop\\blog\\app'
+}
+⨯ Module not found: Error: Can't resolve 'next-flight-client-entry-loader' in 'C:\Users\Gaoyubao\Desktop\blog'
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'C:\System Volume Information'
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'C:\pagefile.sys'
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'C:\swapfile.sys'
+⚠ Found a change in next.config.ts. Restarting the server to apply the changes...
+node:internal/modules/cjs/loader:1433
+  throw err;
+  ^
+
+Error: Cannot find module 'C:\Users\Gaoyubao\Desktop\blog\node_modules\next\dist\server\lib\start-server.js'
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1430:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1040:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1045:22)
+    at Function._load (node:internal/modules/cjs/loader:1216:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v22.22.3
+[?25h

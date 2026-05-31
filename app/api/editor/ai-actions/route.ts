@@ -1,4 +1,4 @@
-import { NextResponse } from 'next/server'
+﻿import { NextResponse } from 'next/server'
 import { getAppCloudflareEnv } from '@/lib/cloudflare'
 import { ensureAiConfigInfrastructure, resolveAiConfigSecret } from '@/lib/ai-provider-profiles'
 
@@ -18,7 +18,7 @@ export async function GET() {
   }
 
   try {
-    const secret = resolveAiConfigSecret(env as Record<string, unknown>)
+    const secret = resolveAiConfigSecret(env as unknown as Record<string, unknown>)
     await ensureAiConfigInfrastructure(db, secret)
 
     const { results } = await db.prepare(
